@@ -1,8 +1,7 @@
 /*Jenkinsfile (Declarative Pipeline)*/
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'ubuntu:latest'
-                     args '-u root:root' } }
+    agent any
     environment {
         FLASK_APP = 'flaskr'
         FLASK_ENV = 'development'
