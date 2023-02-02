@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Starting to deploy docker image.."
 DOCKER_IMAGE=yotamnitzanim/nitzanim-ex-01
 docker pull $DOCKER_IMAGE
